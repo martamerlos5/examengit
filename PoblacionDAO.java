@@ -10,7 +10,7 @@ public class PoblacionDAO {
         ArrayList<Poblacion> lista = null;
         Connection con = BBDDConexion.conectar();
 
-        Statement st = null;
+        Statement st = null; //tb try on resources
         ResultSet rs = null;
 
         try {
