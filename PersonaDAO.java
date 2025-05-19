@@ -22,7 +22,7 @@ public class PersonaDAO {
                     devolver = true;
                 }
             } catch (SQLException ex) {
-                System.out.println("Error al conectarse a la BBDDS");
+                System.out.println("Error al conectarse a la BBDD");
             } finally {
                 try {
                     con.close();
