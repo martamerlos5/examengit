@@ -10,7 +10,7 @@ public class PersonaDAO {
         //pasar 3 datos con preparedstatement y hacer el insert
         Connection con = BBDDConexion.conectar(); //se invoca a la funcion
         if (persona != null) {
-            try {
+            try { //control de excepciones
                 //siempre se invoca un método Prepared
                 PreparedStatement pst = con.prepareStatement("insert into personas values (?,?,?)");
                 pst.setString(1, persona.getNombre());
